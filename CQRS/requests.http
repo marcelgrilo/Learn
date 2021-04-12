@@ -1,0 +1,11 @@
+﻿
+# create Student
+curl --location --request POST 'https://localhost:5001/students' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "Name":"marcelgrilo"
+}'
+
+
+# find by id
+curl --location --request GET 'https://localhost:5001/students?Id=123'
